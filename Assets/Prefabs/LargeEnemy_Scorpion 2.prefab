@@ -269,6 +269,7 @@ GameObject:
   - component: {fileID: 8711916829229975607}
   - component: {fileID: 7286526705814341641}
   - component: {fileID: 8473600814544091037}
+  - component: {fileID: -248388584379656040}
   m_Layer: 0
   m_Name: LargeEnemy_Scorpion 2
   m_TagString: Enemy
@@ -371,10 +372,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PathEnd: {fileID: 0}
   PathStart: {fileID: 0}
-  speed: 1
   Path: PathEnd3
-  Path2: PathStart3
+  Path2: PathStart2
   Confused: 0
+  agent: {fileID: 0}
 --- !u!114 &4101425636354176146
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -398,6 +399,17 @@ MonoBehaviour:
   PlayerScript: {fileID: 0}
   EnemiesInRange: []
   EnemySprite: {fileID: 0}
+  GOAudio1: {fileID: 0}
+  GOAudio2: {fileID: 0}
+  GOAudio3: {fileID: 0}
+  GOAudio4: {fileID: 0}
+  GOAudio5: {fileID: 0}
+  EnemyHurt1: {fileID: 0}
+  EnemyHurt2: {fileID: 0}
+  GoldCollect: {fileID: 0}
+  EnemySpeak1: {fileID: 0}
+  EnemySpeak2: {fileID: 0}
+  RandomInt: 0
 --- !u!65 &8711916829229975607
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -440,6 +452,28 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
+--- !u!195 &-248388584379656040
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4101425636354176152}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 3.6
+  m_Speed: 2
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 12.08
+  m_BaseOffset: 6.04
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
 --- !u!1 &4101425636679795727
 GameObject:
   m_ObjectHideFlags: 0

@@ -89,18 +89,28 @@ public class EnemyHealth : MonoBehaviour
 
     private void Update()
     {
-
-
-        if (Health <= 0)
+        if (Health == 0)
         {
+            if (Boss)
+            {
+                SceneManager.LoadScene("Won");
+            }
             Destroy(gameObject);
             PlayerScript.Gold++;
             GoldCollect.Play();
+        }
+
+        if (Health <= 0)
+        {
 
             if (Boss)
             {
                 SceneManager.LoadScene("Won");
             }
+            Destroy(gameObject);
+            PlayerScript.Gold++;
+            GoldCollect.Play();
+
         }
     }
 

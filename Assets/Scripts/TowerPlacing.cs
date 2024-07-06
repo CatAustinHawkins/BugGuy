@@ -13,32 +13,21 @@ public class TowerPlacing : MonoBehaviour
     public bool OverTowerPlace4;
     public bool OverTowerPlace5;
     public bool OverTowerPlace6;
+    public bool OverTowerPlace7;
+    public bool OverTowerPlace8;
+    public bool OverTowerPlace9;
+    public bool OverTowerPlace10;
+    public bool OverTowerPlace11;
+    public bool OverTowerPlace12;
+    public bool OverTowerPlace13;
+    public bool OverTowerPlace14;
+    public bool OverTowerPlace15;
 
-    public GameObject NormalTurret1;
-    public GameObject RocketTurret1;
-    public GameObject SporeTurret1;
-    public GameObject NormalTurret2;
-    public GameObject RocketTurret2;
-    public GameObject SporeTurret2;
-    public GameObject NormalTurret3;
-    public GameObject RocketTurret3;
-    public GameObject SporeTurret3;
-    public GameObject NormalTurret4;
-    public GameObject RocketTurret4;
-    public GameObject SporeTurret4;
-    public GameObject NormalTurret5;
-    public GameObject RocketTurret5;
-    public GameObject SporeTurret5;
-    public GameObject NormalTurret6;
-    public GameObject RocketTurret6;
-    public GameObject SporeTurret6;
+    public GameObject[] NormalTurret;
+    public GameObject[] RocketTurret;
+    public GameObject[] SporeTurret;
 
-    public GameObject OTower1;
-    public GameObject OTower2;
-    public GameObject OTower3;
-    public GameObject OTower4;
-    public GameObject OTower5;
-    public GameObject OTower6;
+    public GameObject[] OTower;
 
     public GameObject TurretUI;
 
@@ -81,6 +70,60 @@ public class TowerPlacing : MonoBehaviour
             OverTowerPlace6 = true;
             TurretUI.SetActive(true);
         }
+
+        if (other.tag == "TowerPlace7")
+        {
+            OverTowerPlace7 = true;
+            TurretUI.SetActive(true);
+        }
+
+        if (other.tag == "TowerPlace8")
+        {
+            OverTowerPlace8 = true;
+            TurretUI.SetActive(true);
+        }
+
+        if (other.tag == "TowerPlace9")
+        {
+            OverTowerPlace9 = true;
+            TurretUI.SetActive(true);
+        }
+
+        if (other.tag == "TowerPlace10")
+        {
+            OverTowerPlace10 = true;
+            TurretUI.SetActive(true);
+        }
+
+        if (other.tag == "TowerPlace11")
+        {
+            OverTowerPlace11 = true;
+            TurretUI.SetActive(true);
+        }
+
+        if (other.tag == "TowerPlace12")
+        {
+            OverTowerPlace12 = true;
+            TurretUI.SetActive(true);
+        }
+
+        if (other.tag == "TowerPlace13")
+        {
+            OverTowerPlace13 = true;
+            TurretUI.SetActive(true);
+        }
+
+        if (other.tag == "TowerPlace14")
+        {
+            OverTowerPlace14 = true;
+            TurretUI.SetActive(true);
+        }
+
+        if (other.tag == "TowerPlace15")
+        {
+            OverTowerPlace15 = true;
+            TurretUI.SetActive(true);
+        }
     }
     private void OnTriggerExit(Collider other)
     {
@@ -119,6 +162,60 @@ public class TowerPlacing : MonoBehaviour
             OverTowerPlace6 = false;
             TurretUI.SetActive(false);
         }
+
+        if (other.tag == "TowerPlace7")
+        {
+            OverTowerPlace7 = false;
+            TurretUI.SetActive(false);
+        }
+
+        if (other.tag == "TowerPlace8")
+        {
+            OverTowerPlace8 = false;
+            TurretUI.SetActive(false);
+        }
+
+        if (other.tag == "TowerPlace9")
+        {
+            OverTowerPlace9 = false;
+            TurretUI.SetActive(false);
+        }
+
+        if (other.tag == "TowerPlace10")
+        {
+            OverTowerPlace10 = false;
+            TurretUI.SetActive(false);
+        }
+
+        if (other.tag == "TowerPlace11")
+        {
+            OverTowerPlace11 = false;
+            TurretUI.SetActive(false);
+        }
+
+        if (other.tag == "TowerPlace12")
+        {
+            OverTowerPlace12 = false;
+            TurretUI.SetActive(false);
+        }
+
+        if (other.tag == "TowerPlace13")
+        {
+            OverTowerPlace13 = false;
+            TurretUI.SetActive(false);
+        }
+
+        if (other.tag == "TowerPlace14")
+        {
+            OverTowerPlace14 = false;
+            TurretUI.SetActive(false);
+        }
+
+        if (other.tag == "TowerPlace15")
+        {
+            OverTowerPlace15 = false;
+            TurretUI.SetActive(false);
+        }
     }
 
     private void Update()
@@ -128,8 +225,8 @@ public class TowerPlacing : MonoBehaviour
             if(Input.GetKey(KeyCode.Alpha1) && PlayerScript.Gold >= 10)
             {
                 TurretSpawn.Play();
-                NormalTurret1.SetActive(true);
-                OTower1.SetActive(false);
+                NormalTurret[0].SetActive(true);
+                OTower[0].SetActive(false);
                 TurretUI.SetActive(false);
                 OverTowerPlace1 = false;
                 PlayerScript.Gold = PlayerScript.Gold - 10;
@@ -138,8 +235,8 @@ public class TowerPlacing : MonoBehaviour
             if (Input.GetKey(KeyCode.Alpha2) && PlayerScript.Gold >= 10)
             {
                 TurretSpawn.Play();
-                RocketTurret1.SetActive(true);
-                OTower1.SetActive(false);
+                RocketTurret[0].SetActive(true);
+                OTower[0].SetActive(false);
                 OverTowerPlace1 = false;
                 TurretUI.SetActive(false);
                 PlayerScript.Gold = PlayerScript.Gold - 10;
@@ -148,8 +245,8 @@ public class TowerPlacing : MonoBehaviour
             if (Input.GetKey(KeyCode.Alpha3) && PlayerScript.Gold >= 5)
             {
                 TurretSpawn.Play();
-                SporeTurret1.SetActive(true);
-                OTower1.SetActive(false);
+                SporeTurret[0].SetActive(true);
+                OTower[0].SetActive(false);
                 TurretUI.SetActive(false);
                 OverTowerPlace1 = false;
                 PlayerScript.Gold = PlayerScript.Gold - 5;
@@ -161,8 +258,8 @@ public class TowerPlacing : MonoBehaviour
             if (Input.GetKey(KeyCode.Alpha1) && PlayerScript.Gold >= 10)
             {
                 TurretSpawn.Play();
-                NormalTurret2.SetActive(true);
-                OTower2.SetActive(false);
+                NormalTurret[1].SetActive(true);
+                OTower[1].SetActive(false);
                 OverTowerPlace2 = false;
                 TurretUI.SetActive(false);
                 PlayerScript.Gold = PlayerScript.Gold - 10;
@@ -171,8 +268,8 @@ public class TowerPlacing : MonoBehaviour
             if (Input.GetKey(KeyCode.Alpha2) && PlayerScript.Gold >= 10)
             {
                 TurretSpawn.Play();
-                RocketTurret2.SetActive(true);
-                OTower2.SetActive(false);
+                RocketTurret[1].SetActive(true);
+                OTower[1].SetActive(false);
                 OverTowerPlace2 = false;
                 TurretUI.SetActive(false);
                 PlayerScript.Gold = PlayerScript.Gold - 10;
@@ -181,8 +278,8 @@ public class TowerPlacing : MonoBehaviour
             if (Input.GetKey(KeyCode.Alpha3) && PlayerScript.Gold >= 5)
             {
                 TurretSpawn.Play();
-                SporeTurret2.SetActive(true);
-                OTower2.SetActive(false);
+                SporeTurret[1].SetActive(true);
+                OTower[1].SetActive(false);
                 OverTowerPlace2 = false;
                 TurretUI.SetActive(false);
                 PlayerScript.Gold = PlayerScript.Gold - 5;
@@ -194,8 +291,8 @@ public class TowerPlacing : MonoBehaviour
             if (Input.GetKey(KeyCode.Alpha1) && PlayerScript.Gold >= 10)
             {
                 TurretSpawn.Play();
-                NormalTurret3.SetActive(true);
-                OTower3.SetActive(false);
+                NormalTurret[2].SetActive(true);
+                OTower[2].SetActive(false);
                 OverTowerPlace3 = false;
                 TurretUI.SetActive(false);
                 PlayerScript.Gold = PlayerScript.Gold - 10;
@@ -204,8 +301,8 @@ public class TowerPlacing : MonoBehaviour
             if (Input.GetKey(KeyCode.Alpha2) && PlayerScript.Gold >= 10)
             {
                 TurretSpawn.Play();
-                RocketTurret3.SetActive(true);
-                OTower3.SetActive(false);
+                RocketTurret[2].SetActive(true);
+                OTower[2].SetActive(false);
                 OverTowerPlace3 = false;
                 TurretUI.SetActive(false);
                 PlayerScript.Gold = PlayerScript.Gold - 10;
@@ -214,8 +311,8 @@ public class TowerPlacing : MonoBehaviour
             if (Input.GetKey(KeyCode.Alpha3) && PlayerScript.Gold >= 5)
             {
                 TurretSpawn.Play();
-                SporeTurret3.SetActive(true);
-                OTower3.SetActive(false);
+                SporeTurret[2].SetActive(true);
+                OTower[2].SetActive(false);
                 TurretUI.SetActive(false);
                 OverTowerPlace3 = false;
                 PlayerScript.Gold = PlayerScript.Gold - 5;
@@ -227,8 +324,8 @@ public class TowerPlacing : MonoBehaviour
             if (Input.GetKey(KeyCode.Alpha1) && PlayerScript.Gold >= 10)
             {
                 TurretSpawn.Play();
-                NormalTurret4.SetActive(true);
-                OTower4.SetActive(false);
+                NormalTurret[3].SetActive(true);
+                OTower[3].SetActive(false);
                 TurretUI.SetActive(false);
                 OverTowerPlace4 = false;
                 PlayerScript.Gold = PlayerScript.Gold - 10;
@@ -237,8 +334,8 @@ public class TowerPlacing : MonoBehaviour
             if (Input.GetKey(KeyCode.Alpha2) && PlayerScript.Gold >= 10)
             {
                 TurretSpawn.Play();
-                RocketTurret4.SetActive(true);
-                OTower4.SetActive(false);
+                RocketTurret[3].SetActive(true);
+                OTower[3].SetActive(false);
                 OverTowerPlace4 = false;
                 TurretUI.SetActive(false);
                 PlayerScript.Gold = PlayerScript.Gold - 10;
@@ -246,8 +343,8 @@ public class TowerPlacing : MonoBehaviour
 
             if (Input.GetKey(KeyCode.Alpha3) && PlayerScript.Gold >= 5)
             {
-                SporeTurret4.SetActive(true);
-                OTower4.SetActive(false);
+                SporeTurret[3].SetActive(true);
+                OTower[3].SetActive(false);
                 OverTowerPlace4 = false;
                 TurretUI.SetActive(false);
                 PlayerScript.Gold = PlayerScript.Gold - 5;
@@ -259,8 +356,8 @@ public class TowerPlacing : MonoBehaviour
             if (Input.GetKey(KeyCode.Alpha1) && PlayerScript.Gold >= 10)
             {
                 TurretSpawn.Play();
-                NormalTurret5.SetActive(true);
-                OTower5.SetActive(false);
+                NormalTurret[4].SetActive(true);
+                OTower[4].SetActive(false);
                 TurretUI.SetActive(false);
                 OverTowerPlace5 = false;
                 PlayerScript.Gold = PlayerScript.Gold - 10;
@@ -269,8 +366,8 @@ public class TowerPlacing : MonoBehaviour
             if (Input.GetKey(KeyCode.Alpha2) && PlayerScript.Gold >= 10)
             {
                 TurretSpawn.Play();
-                RocketTurret5.SetActive(true);
-                OTower5.SetActive(false);
+                RocketTurret[4].SetActive(true);
+                OTower[4].SetActive(false);
                 OverTowerPlace5 = false;
                 TurretUI.SetActive(false);
                 PlayerScript.Gold = PlayerScript.Gold - 10;
@@ -279,8 +376,8 @@ public class TowerPlacing : MonoBehaviour
             if (Input.GetKey(KeyCode.Alpha3) && PlayerScript.Gold >= 5)
             {
                 TurretSpawn.Play();
-                SporeTurret5.SetActive(true);
-                OTower5.SetActive(false);
+                SporeTurret[4].SetActive(true);
+                OTower[4].SetActive(false);
                 OverTowerPlace5 = false;
                 TurretUI.SetActive(false);
                 PlayerScript.Gold = PlayerScript.Gold - 5;
@@ -292,8 +389,8 @@ public class TowerPlacing : MonoBehaviour
             if (Input.GetKey(KeyCode.Alpha1) && PlayerScript.Gold >= 10)
             {
                 TurretSpawn.Play();
-                NormalTurret6.SetActive(true);
-                OTower6.SetActive(false);
+                NormalTurret[5].SetActive(true);
+                OTower[5].SetActive(false);
                 OverTowerPlace6 = false;
                 TurretUI.SetActive(false);
                 PlayerScript.Gold = PlayerScript.Gold - 10;
@@ -302,8 +399,8 @@ public class TowerPlacing : MonoBehaviour
             if (Input.GetKey(KeyCode.Alpha2) && PlayerScript.Gold >= 10)
             {
                 TurretSpawn.Play();
-                RocketTurret6.SetActive(true);
-                OTower6.SetActive(false);
+                RocketTurret[5].SetActive(true);
+                OTower[5].SetActive(false);
                 OverTowerPlace6 = false;
                 TurretUI.SetActive(false);
                 PlayerScript.Gold = PlayerScript.Gold - 10;
@@ -312,9 +409,306 @@ public class TowerPlacing : MonoBehaviour
             if (Input.GetKey(KeyCode.Alpha3) && PlayerScript.Gold >= 5)
             {
                 TurretSpawn.Play();
-                SporeTurret6.SetActive(true);
-                OTower6.SetActive(false);
+                SporeTurret[5].SetActive(true);
+                OTower[5].SetActive(false);
                 OverTowerPlace6 = false;
+                TurretUI.SetActive(false);
+                PlayerScript.Gold = PlayerScript.Gold - 5;
+            }
+        }
+
+        if (OverTowerPlace7)
+        {
+            if (Input.GetKey(KeyCode.Alpha1) && PlayerScript.Gold >= 10)
+            {
+                TurretSpawn.Play();
+                NormalTurret[6].SetActive(true);
+                OTower[6].SetActive(false);
+                OverTowerPlace7 = false;
+                TurretUI.SetActive(false);
+                PlayerScript.Gold = PlayerScript.Gold - 10;
+            }
+
+            if (Input.GetKey(KeyCode.Alpha2) && PlayerScript.Gold >= 10)
+            {
+                TurretSpawn.Play();
+                RocketTurret[6].SetActive(true);
+                OTower[6].SetActive(false);
+                OverTowerPlace7 = false;
+                TurretUI.SetActive(false);
+                PlayerScript.Gold = PlayerScript.Gold - 10;
+            }
+
+            if (Input.GetKey(KeyCode.Alpha3) && PlayerScript.Gold >= 5)
+            {
+                TurretSpawn.Play();
+                SporeTurret[6].SetActive(true);
+                OTower[6].SetActive(false);
+                OverTowerPlace7 = false;
+                TurretUI.SetActive(false);
+                PlayerScript.Gold = PlayerScript.Gold - 5;
+            }
+        }
+
+        if (OverTowerPlace8)
+        {
+            if (Input.GetKey(KeyCode.Alpha1) && PlayerScript.Gold >= 10)
+            {
+                TurretSpawn.Play();
+                NormalTurret[7].SetActive(true);
+                OTower[7].SetActive(false);
+                OverTowerPlace8 = false;
+                TurretUI.SetActive(false);
+                PlayerScript.Gold = PlayerScript.Gold - 10;
+            }
+
+            if (Input.GetKey(KeyCode.Alpha2) && PlayerScript.Gold >= 10)
+            {
+                TurretSpawn.Play();
+                RocketTurret[7].SetActive(true);
+                OTower[7].SetActive(false);
+                OverTowerPlace8 = false;
+                TurretUI.SetActive(false);
+                PlayerScript.Gold = PlayerScript.Gold - 10;
+            }
+
+            if (Input.GetKey(KeyCode.Alpha3) && PlayerScript.Gold >= 5)
+            {
+                TurretSpawn.Play();
+                SporeTurret[7].SetActive(true);
+                OTower[7].SetActive(false);
+                OverTowerPlace8 = false;
+                TurretUI.SetActive(false);
+                PlayerScript.Gold = PlayerScript.Gold - 5;
+            }
+        }
+
+        if (OverTowerPlace9)
+        {
+            if (Input.GetKey(KeyCode.Alpha1) && PlayerScript.Gold >= 10)
+            {
+                TurretSpawn.Play();
+                NormalTurret[8].SetActive(true);
+                OTower[8].SetActive(false);
+                OverTowerPlace9 = false;
+                TurretUI.SetActive(false);
+                PlayerScript.Gold = PlayerScript.Gold - 10;
+            }
+
+            if (Input.GetKey(KeyCode.Alpha2) && PlayerScript.Gold >= 10)
+            {
+                TurretSpawn.Play();
+                RocketTurret[8].SetActive(true);
+                OTower[8].SetActive(false);
+                OverTowerPlace9 = false;
+                TurretUI.SetActive(false);
+                PlayerScript.Gold = PlayerScript.Gold - 10;
+            }
+
+            if (Input.GetKey(KeyCode.Alpha3) && PlayerScript.Gold >= 5)
+            {
+                TurretSpawn.Play();
+                SporeTurret[8].SetActive(true);
+                OTower[8].SetActive(false);
+                OverTowerPlace9 = false;
+                TurretUI.SetActive(false);
+                PlayerScript.Gold = PlayerScript.Gold - 5;
+            }
+        }
+
+        if (OverTowerPlace10)
+        {
+            if (Input.GetKey(KeyCode.Alpha1) && PlayerScript.Gold >= 10)
+            {
+                TurretSpawn.Play();
+                NormalTurret[9].SetActive(true);
+                OTower[9].SetActive(false);
+                OverTowerPlace10 = false;
+                TurretUI.SetActive(false);
+                PlayerScript.Gold = PlayerScript.Gold - 10;
+            }
+
+            if (Input.GetKey(KeyCode.Alpha2) && PlayerScript.Gold >= 10)
+            {
+                TurretSpawn.Play();
+                RocketTurret[9].SetActive(true);
+                OTower[9].SetActive(false);
+                OverTowerPlace10 = false;
+                TurretUI.SetActive(false);
+                PlayerScript.Gold = PlayerScript.Gold - 10;
+            }
+
+            if (Input.GetKey(KeyCode.Alpha3) && PlayerScript.Gold >= 5)
+            {
+                TurretSpawn.Play();
+                SporeTurret[9].SetActive(true);
+                OTower[9].SetActive(false);
+                OverTowerPlace10 = false;
+                TurretUI.SetActive(false);
+                PlayerScript.Gold = PlayerScript.Gold - 5;
+            }
+        }
+
+        if (OverTowerPlace11)
+        {
+            if (Input.GetKey(KeyCode.Alpha1) && PlayerScript.Gold >= 10)
+            {
+                TurretSpawn.Play();
+                NormalTurret[10].SetActive(true);
+                OTower[10].SetActive(false);
+                OverTowerPlace11 = false;
+                TurretUI.SetActive(false);
+                PlayerScript.Gold = PlayerScript.Gold - 10;
+            }
+
+            if (Input.GetKey(KeyCode.Alpha2) && PlayerScript.Gold >= 10)
+            {
+                TurretSpawn.Play();
+                RocketTurret[10].SetActive(true);
+                OTower[10].SetActive(false);
+                OverTowerPlace11 = false;
+                TurretUI.SetActive(false);
+                PlayerScript.Gold = PlayerScript.Gold - 10;
+            }
+
+            if (Input.GetKey(KeyCode.Alpha3) && PlayerScript.Gold >= 5)
+            {
+                TurretSpawn.Play();
+                SporeTurret[10].SetActive(true);
+                OTower[10].SetActive(false);
+                OverTowerPlace11 = false;
+                TurretUI.SetActive(false);
+                PlayerScript.Gold = PlayerScript.Gold - 5;
+            }
+        }
+
+        if (OverTowerPlace12)
+        {
+            if (Input.GetKey(KeyCode.Alpha1) && PlayerScript.Gold >= 10)
+            {
+                TurretSpawn.Play();
+                NormalTurret[11].SetActive(true);
+                OTower[11].SetActive(false);
+                OverTowerPlace12 = false;
+                TurretUI.SetActive(false);
+                PlayerScript.Gold = PlayerScript.Gold - 10;
+            }
+
+            if (Input.GetKey(KeyCode.Alpha2) && PlayerScript.Gold >= 10)
+            {
+                TurretSpawn.Play();
+                RocketTurret[11].SetActive(true);
+                OTower[11].SetActive(false);
+                OverTowerPlace12 = false;
+                TurretUI.SetActive(false);
+                PlayerScript.Gold = PlayerScript.Gold - 10;
+            }
+
+            if (Input.GetKey(KeyCode.Alpha3) && PlayerScript.Gold >= 5)
+            {
+                TurretSpawn.Play();
+                SporeTurret[11].SetActive(true);
+                OTower[11].SetActive(false);
+                OverTowerPlace12 = false;
+                TurretUI.SetActive(false);
+                PlayerScript.Gold = PlayerScript.Gold - 5;
+            }
+        }
+
+        if (OverTowerPlace13)
+        {
+            if (Input.GetKey(KeyCode.Alpha1) && PlayerScript.Gold >= 10)
+            {
+                TurretSpawn.Play();
+                NormalTurret[12].SetActive(true);
+                OTower[12].SetActive(false);
+                OverTowerPlace13 = false;
+                TurretUI.SetActive(false);
+                PlayerScript.Gold = PlayerScript.Gold - 10;
+            }
+
+            if (Input.GetKey(KeyCode.Alpha2) && PlayerScript.Gold >= 10)
+            {
+                TurretSpawn.Play();
+                RocketTurret[12].SetActive(true);
+                OTower[12].SetActive(false);
+                OverTowerPlace13 = false;
+                TurretUI.SetActive(false);
+                PlayerScript.Gold = PlayerScript.Gold - 10;
+            }
+
+            if (Input.GetKey(KeyCode.Alpha3) && PlayerScript.Gold >= 5)
+            {
+                TurretSpawn.Play();
+                SporeTurret[12].SetActive(true);
+                OTower[12].SetActive(false);
+                OverTowerPlace13 = false;
+                TurretUI.SetActive(false);
+                PlayerScript.Gold = PlayerScript.Gold - 5;
+            }
+        }
+
+        if (OverTowerPlace14)
+        {
+            if (Input.GetKey(KeyCode.Alpha1) && PlayerScript.Gold >= 10)
+            {
+                TurretSpawn.Play();
+                NormalTurret[13].SetActive(true);
+                OTower[13].SetActive(false);
+                OverTowerPlace14 = false;
+                TurretUI.SetActive(false);
+                PlayerScript.Gold = PlayerScript.Gold - 10;
+            }
+
+            if (Input.GetKey(KeyCode.Alpha2) && PlayerScript.Gold >= 10)
+            {
+                TurretSpawn.Play();
+                RocketTurret[13].SetActive(true);
+                OTower[13].SetActive(false);
+                OverTowerPlace14 = false;
+                TurretUI.SetActive(false);
+                PlayerScript.Gold = PlayerScript.Gold - 10;
+            }
+
+            if (Input.GetKey(KeyCode.Alpha3) && PlayerScript.Gold >= 5)
+            {
+                TurretSpawn.Play();
+                SporeTurret[13].SetActive(true);
+                OTower[13].SetActive(false);
+                OverTowerPlace14 = false;
+                TurretUI.SetActive(false);
+                PlayerScript.Gold = PlayerScript.Gold - 5;
+            }
+        }
+
+        if (OverTowerPlace15)
+        {
+            if (Input.GetKey(KeyCode.Alpha1) && PlayerScript.Gold >= 10)
+            {
+                TurretSpawn.Play();
+                NormalTurret[14].SetActive(true);
+                OTower[14].SetActive(false);
+                OverTowerPlace15 = false;
+                TurretUI.SetActive(false);
+                PlayerScript.Gold = PlayerScript.Gold - 10;
+            }
+
+            if (Input.GetKey(KeyCode.Alpha2) && PlayerScript.Gold >= 10)
+            {
+                TurretSpawn.Play();
+                RocketTurret[14].SetActive(true);
+                OTower[14].SetActive(false);
+                OverTowerPlace15 = false;
+                TurretUI.SetActive(false);
+                PlayerScript.Gold = PlayerScript.Gold - 10;
+            }
+
+            if (Input.GetKey(KeyCode.Alpha3) && PlayerScript.Gold >= 5)
+            {
+                TurretSpawn.Play();
+                SporeTurret[14].SetActive(true);
+                OTower[14].SetActive(false);
+                OverTowerPlace15 = false;
                 TurretUI.SetActive(false);
                 PlayerScript.Gold = PlayerScript.Gold - 5;
             }

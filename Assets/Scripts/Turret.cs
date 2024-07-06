@@ -37,8 +37,6 @@ public class Turret : MonoBehaviour
 	public bool RocketTurret;
 	public bool NormalTurret;
 
-	private EnemyMovement EnemyConfuse;
-
 	public AudioSource RocketTurretAudio;
 	public AudioSource NormalTurretAudio;
 
@@ -67,7 +65,6 @@ public class Turret : MonoBehaviour
 		{
 			target = nearestEnemy.transform;
 			targetEnemy = nearestEnemy.GetComponent<EnemyHealth>();
-			EnemyConfuse = nearestEnemy.GetComponent < EnemyMovement>();
 		}
 		else
 		{

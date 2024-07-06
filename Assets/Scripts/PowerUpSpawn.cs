@@ -7,7 +7,7 @@ public class PowerUpSpawn : MonoBehaviour
 
     public GameObject[] SpeedPowerUps;
 
-    public GameObject GunPowerUp;
+    public GameObject[] GunPowerUps;
 
     public float Random1;
     public int Random2;
@@ -27,7 +27,7 @@ public class PowerUpSpawn : MonoBehaviour
         yield return new WaitForSecondsRealtime(Random1);
         if(Random4 == 2)
         {
-            Random2 = Random.Range(0, 2);
+            Random2 = Random.Range(0, 7);
             SpeedPowerUps[Random2].SetActive(true);
         }
         StartCoroutine(PowerUpSpawnerSpeed());
@@ -42,7 +42,8 @@ public class PowerUpSpawn : MonoBehaviour
 
         if (Random4 == 2)
         {
-            GunPowerUp.SetActive(true);
+            Random2 = Random.Range(0, 6);
+            GunPowerUps[Random2].SetActive(true);
         }
 
         StartCoroutine(PowerUpSpawnerGun());

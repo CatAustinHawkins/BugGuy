@@ -29,6 +29,15 @@ TagManager:
   - EnemySpeak1
   - EnemySpeak2
   - GunShot
+  - TowerPlace7
+  - TowerPlace8
+  - TowerPlace9
+  - TowerPlace10
+  - TowerPlace11
+  - TowerPlace12
+  - TowerPlace13
+  - TowerPlace14
+  - TowerPlace15
   layers:
   - Default
   - TransparentFX

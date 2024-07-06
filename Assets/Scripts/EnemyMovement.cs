@@ -1,21 +1,23 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.AI;
 public class EnemyMovement : MonoBehaviour
 {
 
     public GameObject PathEnd;
 
     public GameObject PathStart;
-    public float speed;
     public string Path;
     public string Path2;
     public bool Confused;
 
+    public NavMeshAgent agent;
+
     // Start is called before the first frame update
     void Start()
     {
+        agent = gameObject.GetComponent<NavMeshAgent>();
         PathEnd = GameObject.FindGameObjectWithTag(Path);
         PathStart = GameObject.FindGameObjectWithTag(Path2);
     }
@@ -23,14 +25,13 @@ public class EnemyMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
         if (!Confused)
         {
-            transform.position = Vector3.MoveTowards(transform.position, PathEnd.transform.position, speed * Time.deltaTime);
+            agent.SetDestination(PathEnd.transform.position);
         }
         else
         {
-            transform.position = Vector3.MoveTowards(transform.position, PathStart.transform.position, speed * Time.deltaTime);
+            agent.SetDestination(PathStart.transform.position);
         }
 
     }

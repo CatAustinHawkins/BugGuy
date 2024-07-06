@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: -8802907312820217482}
   - component: {fileID: 5268130582771538723}
   - component: {fileID: -2000829475679780386}
+  - component: {fileID: -1896770013342084982}
   m_Layer: 0
   m_Name: SmallEnemy_Mantis
   m_TagString: Enemy
@@ -118,10 +119,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PathEnd: {fileID: 0}
   PathStart: {fileID: 0}
-  speed: 5
   Path: PathEnd1
-  Path2: PathStart1
+  Path2: PathStart2
   Confused: 0
+  agent: {fileID: 0}
 --- !u!114 &5383428216190678605
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -145,6 +146,17 @@ MonoBehaviour:
   PlayerScript: {fileID: 0}
   EnemiesInRange: []
   EnemySprite: {fileID: 0}
+  GOAudio1: {fileID: 0}
+  GOAudio2: {fileID: 0}
+  GOAudio3: {fileID: 0}
+  GOAudio4: {fileID: 0}
+  GOAudio5: {fileID: 0}
+  EnemyHurt1: {fileID: 0}
+  EnemyHurt2: {fileID: 0}
+  GoldCollect: {fileID: 0}
+  EnemySpeak1: {fileID: 0}
+  EnemySpeak2: {fileID: 0}
+  RandomInt: 0
 --- !u!65 &-8802907312820217482
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -187,6 +199,28 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
+--- !u!195 &-1896770013342084982
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5383428216190678598}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 5.935
+  m_Speed: 5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 12.27
+  m_BaseOffset: 6.135
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
 --- !u!1 &5383428217015334363
 GameObject:
   m_ObjectHideFlags: 0
