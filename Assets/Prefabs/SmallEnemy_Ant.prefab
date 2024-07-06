@@ -228,6 +228,8 @@ GameObject:
   - component: {fileID: 1664003142175990186}
   - component: {fileID: 1664003142175990199}
   - component: {fileID: -1621209648898390371}
+  - component: {fileID: 8347543117944594344}
+  - component: {fileID: 7283491344666458855}
   m_Layer: 0
   m_Name: SmallEnemy_Ant
   m_TagString: Enemy
@@ -329,8 +331,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PathEnd: {fileID: 0}
-  speed: 3
+  PathStart: {fileID: 0}
+  speed: 5
   Path: PathEnd1
+  Path2: PathStart1
+  Confused: 0
 --- !u!114 &1664003142175990199
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -346,9 +351,14 @@ MonoBehaviour:
   LargeEnemy: 0
   MediumEnemy: 0
   SmallEnemy: 1
+  Moth: 0
   Health: 0
+  Boss: 0
   HealthBar: {fileID: 0}
   Player: {fileID: 0}
+  PlayerScript: {fileID: 0}
+  EnemiesInRange: []
+  EnemySprite: {fileID: 0}
 --- !u!65 &-1621209648898390371
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -362,6 +372,35 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 6.0999994, y: 8.349999, z: 0.19999999}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!65 &8347543117944594344
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1664003142175990189}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 21.2, y: 19.4, z: 20}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &7283491344666458855
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1664003142175990189}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 112
+  m_CollisionDetection: 0
 --- !u!1 &1664003142434910864
 GameObject:
   m_ObjectHideFlags: 0

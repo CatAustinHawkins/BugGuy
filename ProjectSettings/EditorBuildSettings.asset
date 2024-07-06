@@ -12,6 +12,15 @@ EditorBuildSettings:
     path: Assets/Scenes/Level.unity
     guid: e102938cd2dc28f428bdc2a66ff3b719
   - enabled: 1
+    path: Assets/Scenes/TutorialPlayer.unity
+    guid: 09538b1e038073542b1aaa349dda6805
+  - enabled: 1
+    path: Assets/Scenes/TutorialEnemy.unity
+    guid: 776544557fa50b948972f877eda889ae
+  - enabled: 1
+    path: Assets/Scenes/TutorialTurrets.unity
+    guid: 7139387356f7b9442a988955f34a6327
+  - enabled: 1
     path: Assets/Scenes/Won.unity
     guid: 1f4be83aa2433744dae520090465677a
   - enabled: 1

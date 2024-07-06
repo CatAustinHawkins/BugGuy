@@ -12,9 +12,11 @@ GameObject:
   - component: {fileID: 5034566622520507540}
   - component: {fileID: 5034566622520507539}
   - component: {fileID: 5034566622520507538}
+  - component: {fileID: 2652539949996569437}
+  - component: {fileID: 3337550637170793614}
   m_Layer: 0
   m_Name: GunUp
-  m_TagString: Untagged
+  m_TagString: GunTwoPowerUp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -104,6 +106,32 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!65 &2652539949996569437
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5034566622520507502}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.42, y: 0.72, z: 0.97}
+  m_Center: {x: -0.001366701, y: 0, z: 0.0003017187}
+--- !u!114 &3337550637170793614
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5034566622520507502}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eaf30118a91250d4aa6c8ed82da3f1e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tobedestroyed: {fileID: 5034566622882309028}
 --- !u!1 &5034566622882309028
 GameObject:
   m_ObjectHideFlags: 0

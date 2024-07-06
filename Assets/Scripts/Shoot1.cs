@@ -28,8 +28,5 @@ public class Shoot1 : MonoBehaviour
         Cooldown = false;
     }
 
-    private void OnTriggerEnter(Collider other)
-    {
-        Destroy(gameObject);
-    }
+
 }

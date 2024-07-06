@@ -267,6 +267,8 @@ GameObject:
   - component: {fileID: 4101425636354176159}
   - component: {fileID: 4101425636354176146}
   - component: {fileID: 8711916829229975607}
+  - component: {fileID: 7286526705814341641}
+  - component: {fileID: 8473600814544091037}
   m_Layer: 0
   m_Name: LargeEnemy_Scorpion
   m_TagString: Enemy
@@ -368,8 +370,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PathEnd: {fileID: 0}
+  PathStart: {fileID: 0}
   speed: 1
   Path: PathEnd3
+  Path2: PathStart3
+  Confused: 0
 --- !u!114 &4101425636354176146
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -388,6 +393,9 @@ MonoBehaviour:
   Health: 0
   HealthBar: {fileID: 0}
   Player: {fileID: 0}
+  PlayerScript: {fileID: 0}
+  EnemiesInRange: []
+  EnemySprite: {fileID: 0}
 --- !u!65 &8711916829229975607
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -401,6 +409,35 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 13.51, y: 11.32, z: 0.2}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!65 &7286526705814341641
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4101425636354176152}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 20, y: 20, z: 20}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &8473600814544091037
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4101425636354176152}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 112
+  m_CollisionDetection: 0
 --- !u!1 &4101425636679795727
 GameObject:
   m_ObjectHideFlags: 0

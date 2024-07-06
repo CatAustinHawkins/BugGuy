@@ -14,6 +14,8 @@ GameObject:
   - component: {fileID: 5383428216190678593}
   - component: {fileID: 5383428216190678605}
   - component: {fileID: -8802907312820217482}
+  - component: {fileID: 5268130582771538723}
+  - component: {fileID: -2000829475679780386}
   m_Layer: 0
   m_Name: SmallEnemy_Mantis
   m_TagString: Enemy
@@ -115,8 +117,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PathEnd: {fileID: 0}
-  speed: 3
+  PathStart: {fileID: 0}
+  speed: 5
   Path: PathEnd1
+  Path2: PathStart1
+  Confused: 0
 --- !u!114 &5383428216190678605
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -132,9 +137,14 @@ MonoBehaviour:
   LargeEnemy: 0
   MediumEnemy: 0
   SmallEnemy: 1
+  Moth: 0
   Health: 0
+  Boss: 0
   HealthBar: {fileID: 0}
   Player: {fileID: 0}
+  PlayerScript: {fileID: 0}
+  EnemiesInRange: []
+  EnemySprite: {fileID: 0}
 --- !u!65 &-8802907312820217482
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -148,6 +158,35 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 11.87, y: 12.27, z: 0.2}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!65 &5268130582771538723
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5383428216190678598}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 28.3, y: 23.5, z: 21.2}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &-2000829475679780386
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5383428216190678598}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 112
+  m_CollisionDetection: 0
 --- !u!1 &5383428217015334363
 GameObject:
   m_ObjectHideFlags: 0

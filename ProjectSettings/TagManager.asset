@@ -15,6 +15,20 @@ TagManager:
   - TowerPlace4
   - Home
   - Enemy
+  - GunTwoPowerUp
+  - SpeedPowerUp
+  - PathStart1
+  - PathStart2
+  - PathStart3
+  - Confuse
+  - TowerPlace5
+  - TowerPlace6
+  - EnemyHurt1
+  - EnemyHurt2
+  - GoldCollect
+  - EnemySpeak1
+  - EnemySpeak2
+  - GunShot
   layers:
   - Default
   - TransparentFX

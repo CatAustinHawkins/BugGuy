@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
-
+using UnityEngine.UI;
 public class PlayerMovementTutorial : MonoBehaviour
 {
     [Header("Movement")]
@@ -22,9 +22,8 @@ public class PlayerMovementTutorial : MonoBehaviour
     public KeyCode jumpKey = KeyCode.Space;
 
     [Header("Ground Check")]
-    public float playerHeight;
     public LayerMask whatIsGround;
-    bool grounded;
+    public bool grounded;
 
     public Transform orientation;
 
@@ -34,6 +33,18 @@ public class PlayerMovementTutorial : MonoBehaviour
     Vector3 moveDirection;
 
     Rigidbody rb;
+
+    public bool SpeedPowerUp;
+
+    public Animator SpeedAnim;
+    public GameObject SpeedUI;
+    public Image SpeedUI2;
+    public AudioSource PowerUpCollect;
+    public AudioSource Step1;
+    public AudioSource Step2;
+
+    public int RandomInt;
+
     void Awake()
     {
         QualitySettings.vSyncCount = 0;  // VSync must be disabled
@@ -51,9 +62,6 @@ public class PlayerMovementTutorial : MonoBehaviour
 
     private void Update()
     {
-        // ground check
-        grounded = Physics.Raycast(transform.position, Vector3.down, playerHeight * 0.5f + 0.3f, whatIsGround);
-
         MyInput();
         SpeedControl();
 
@@ -62,6 +70,34 @@ public class PlayerMovementTutorial : MonoBehaviour
             rb.drag = groundDrag;
         else
             rb.drag = 0;
+
+        if(SpeedPowerUp)
+        {
+            moveSpeed = 20f;
+            jumpForce = 10f;
+        }
+        else
+        {
+            moveSpeed = 10f;
+            jumpForce = 5f;
+
+        }
+
+        if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.D))
+        {
+            RandomInt = Random.Range(0, 3);
+
+            if (RandomInt == 1)
+            {
+                Step1.Play();
+
+            }
+            else
+            {
+                Step2.Play();
+
+            }
+        }
     }
 
     private void FixedUpdate()
@@ -91,11 +127,12 @@ public class PlayerMovementTutorial : MonoBehaviour
         moveDirection = orientation.forward * verticalInput + orientation.right * horizontalInput;
 
         // on ground
-        if(grounded)
+        if (grounded)
+        {
             rb.AddForce(moveDirection.normalized * moveSpeed * 10f, ForceMode.Force);
-
+        }
         // in air
-        else if(!grounded)
+        else if (!grounded)
             rb.AddForce(moveDirection.normalized * moveSpeed * 10f * airMultiplier, ForceMode.Force);
     }
 
@@ -121,5 +158,38 @@ public class PlayerMovementTutorial : MonoBehaviour
     private void ResetJump()
     {
         readyToJump = true;
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.tag == "SpeedPowerUp")
+        {
+            SpeedPowerUp = true;
+            StartCoroutine(PowerUpWait());
+            SpeedUI.SetActive(true);
+            PowerUpCollect.Play();
+        }
+    }
+
+    IEnumerator PowerUpWait()
+    {
+        yield return new WaitForSecondsRealtime(10f);
+        SpeedAnim.Play("New Animation");
+        yield return new WaitForSecondsRealtime(5f);
+        SpeedPowerUp = false;
+        SpeedUI.SetActive(false);
+        SpeedUI2.color = Color.white;
+       
+        SpeedAnim.StopPlayback();
+    }
+
+    public void OnCollisionStay(Collision collision)
+    {
+        grounded = true;
+    }
+
+    public void OnCollisionExit(Collision collision)
+    {
+        grounded = false;
     }
 }
