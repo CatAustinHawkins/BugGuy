@@ -46,7 +46,7 @@ TagManager:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - Floor
+  - Player
   - Water
   - UI
   - Enemy

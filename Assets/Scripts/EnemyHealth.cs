@@ -78,7 +78,7 @@ public class EnemyHealth : MonoBehaviour
 
         if (MediumEnemy)
         {
-            Health = 12;
+            Health = 8;
         }
 
         if (SmallEnemy)

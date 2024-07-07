@@ -21,6 +21,8 @@ public class PlayerMisc : MonoBehaviour
 
     public GameObject Wave1;
 
+    public GameObject PlayerArm;
+
     public int RandomInt;
     void Start()
     {
@@ -42,6 +44,7 @@ public class PlayerMisc : MonoBehaviour
             GunUI.SetActive(true);
             PowerUpCollect.Play();
             StartCoroutine(PowerUpWait());
+            PlayerArm.SetActive(false);
         }
 
         if(other.tag == "Lilypad")
@@ -78,5 +81,7 @@ public class PlayerMisc : MonoBehaviour
         SecondGun.SetActive(false);
         GunUI2.color = Color.white;
         GunUI.SetActive(false);
+        PlayerArm.SetActive(true);
+
     }
 }

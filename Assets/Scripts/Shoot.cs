@@ -37,7 +37,7 @@ public class Shoot : MonoBehaviour
     IEnumerator Shooting()
     {
         Cooldown = true;
-        yield return new WaitForSeconds(0.15f);
+        yield return new WaitForSeconds(0.18f);
         Cooldown = false;
     }
 
