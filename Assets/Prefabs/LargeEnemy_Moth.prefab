@@ -388,7 +388,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PathEnd: {fileID: 0}
   PathStart: {fileID: 0}
-  Path: PathEnd3
+  Path: PathEnd2
   Path2: PathStart2
   Confused: 0
   agent: {fileID: 7636273207901653176}

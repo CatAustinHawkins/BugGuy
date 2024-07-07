@@ -372,7 +372,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PathEnd: {fileID: 0}
   PathStart: {fileID: 0}
-  Path: PathEnd3
+  Path: PathEnd2
   Path2: PathStart2
   Confused: 0
   agent: {fileID: 0}
@@ -421,7 +421,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 13.51, y: 11.32, z: 0.2}
+  m_Size: {x: 6.9, y: 8.7, z: 0.2}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!65 &7286526705814341641
 BoxCollider:

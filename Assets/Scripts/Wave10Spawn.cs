@@ -83,25 +83,25 @@ public class Wave10Spawn : MonoBehaviour
 
     IEnumerator HeavyEnemySpawn()
     {
-        yield return new WaitForSecondsRealtime(1.10f);
+        yield return new WaitForSecondsRealtime(3f);
         HeavyEnemySpawning();
     }
 
     IEnumerator NormalEnemySpawn()
     {
-        yield return new WaitForSecondsRealtime(2.10f);
+        yield return new WaitForSecondsRealtime(2.50f);
         NormalEnemySpawning();
     }
 
     IEnumerator FlyingEnemySpawn()
     {
-        yield return new WaitForSecondsRealtime(2.10f);
+        yield return new WaitForSecondsRealtime(2f);
         FlyingEnemySpawning();
     }
 
     IEnumerator BossSpawn()
     {
-        yield return new WaitForSecondsRealtime(5f);
+        yield return new WaitForSecondsRealtime(7.5f);
         Instantiate(BossEnemy, transform.position, transform.rotation);
         Destroy(gameObject);
     }

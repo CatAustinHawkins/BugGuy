@@ -88,7 +88,7 @@ public class Wave8Spawn : MonoBehaviour
 
     IEnumerator HeavyEnemySpawn()
     {
-        yield return new WaitForSecondsRealtime(1.5f);
+        yield return new WaitForSecondsRealtime(3f);
         HeavyEnemySpawning();
     }
 
@@ -100,7 +100,7 @@ public class Wave8Spawn : MonoBehaviour
 
     IEnumerator FlyingEnemySpawn()
     {
-        yield return new WaitForSecondsRealtime(2.5f);
+        yield return new WaitForSecondsRealtime(2f);
         FlyingEnemySpawning();
     }
 
