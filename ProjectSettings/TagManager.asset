@@ -40,6 +40,8 @@ TagManager:
   - TowerPlace15
   - Rocket
   - Boss
+  - Lilypad
+  - WaveStart
   layers:
   - Default
   - TransparentFX

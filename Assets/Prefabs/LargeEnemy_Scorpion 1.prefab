@@ -269,6 +269,7 @@ GameObject:
   - component: {fileID: 7286526705814341641}
   - component: {fileID: 8473600814544091037}
   - component: {fileID: -5200513667651097312}
+  - component: {fileID: 270534889898059636}
   m_Layer: 6
   m_Name: LargeEnemy_Scorpion 1
   m_TagString: Enemy
@@ -408,8 +409,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 5.44, y: 16.266127, z: 0.20000008}
-  m_Center: {x: -0.01, y: -0.13911246, z: 0}
+  m_Size: {x: 5.44, y: 16.266127, z: 0}
+  m_Center: {x: -0.009999893, y: -0.13911292, z: -0.10000004}
 --- !u!65 &7286526705814341641
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -421,8 +422,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 20, y: 20, z: 20}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 22.506277, y: 8.701923, z: 4.404039}
+  m_Center: {x: 0.3178644, y: 4.4139733, z: -0.06369049}
 --- !u!54 &8473600814544091037
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -461,6 +462,19 @@ NavMeshAgent:
   m_BaseOffset: 8.212676
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!65 &270534889898059636
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4101425636354176152}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 6.8777304, y: 9.524238, z: 4.4843264}
+  m_Center: {x: 0.19541843, y: -3.4505777, z: -0.018377323}
 --- !u!1 &4101425636679795727
 GameObject:
   m_ObjectHideFlags: 0

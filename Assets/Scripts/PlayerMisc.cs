@@ -15,6 +15,13 @@ public class PlayerMisc : MonoBehaviour
     public Image GunUI2;
 
     public AudioSource PowerUpCollect;
+
+    public AudioSource LilypadAudio;
+    public AudioSource LilypadAudio2;
+
+    public GameObject Wave1;
+
+    public int RandomInt;
     void Start()
     {
         
@@ -35,6 +42,29 @@ public class PlayerMisc : MonoBehaviour
             GunUI.SetActive(true);
             PowerUpCollect.Play();
             StartCoroutine(PowerUpWait());
+        }
+
+        if(other.tag == "Lilypad")
+        {
+            RandomInt = Random.Range(0, 3);
+
+            if (RandomInt == 1)
+            {
+                LilypadAudio.Play();
+
+            }
+            else
+            {
+                LilypadAudio2.Play();
+
+            }
+        }
+
+
+        if (other.tag == "WaveStart")
+        {
+            Wave1.SetActive(true);
+
         }
     }
 

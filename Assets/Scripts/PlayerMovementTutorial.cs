@@ -83,7 +83,7 @@ public class PlayerMovementTutorial : MonoBehaviour
 
         }
 
-        if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.D))
+/*        if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.D))
         {
             RandomInt = Random.Range(0, 3);
 
@@ -98,6 +98,7 @@ public class PlayerMovementTutorial : MonoBehaviour
 
             }
         }
+*/
     }
 
     private void FixedUpdate()

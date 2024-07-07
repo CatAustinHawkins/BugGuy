@@ -46,7 +46,7 @@ public class Gun : MonoBehaviour
     IEnumerator Shooting()
     {
         Cooldown = true;
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(0.15f);
         Cooldown = false;
     }
 }

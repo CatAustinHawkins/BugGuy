@@ -196,6 +196,8 @@ MonoBehaviour:
   firePoint2: {fileID: 0}
   RocketTurret: 0
   NormalTurret: 0
+  CooldownTime: 1
+  Cooldown: 0
   RocketTurretAudio: {fileID: 0}
   NormalTurretAudio: {fileID: 0}
 --- !u!65 &3239349127452359146

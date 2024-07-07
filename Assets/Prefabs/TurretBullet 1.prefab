@@ -13,9 +13,9 @@ GameObject:
   - component: {fileID: 7347179569479936902}
   - component: {fileID: -4543656742060259692}
   - component: {fileID: 5918229261919648585}
-  - component: {fileID: 6435870254785814026}
   - component: {fileID: 7419106930633543001}
   - component: {fileID: 2918520866631075944}
+  - component: {fileID: 1948795355902644948}
   m_Layer: 0
   m_Name: TurretBullet 1
   m_TagString: Rocket
@@ -117,19 +117,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 12.336894, y: 12.417548, z: 40.755398}
   m_Center: {x: 0, y: -0.00000095367426, z: 0.0000019073485}
---- !u!65 &6435870254785814026
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7347179569479936900}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 200, y: 200, z: 200}
-  m_Center: {x: 0, y: -0.00000095367426, z: 0.0000019073485}
 --- !u!114 &7419106930633543001
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -142,7 +129,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 495839d7178cc7841afad526a622ad43, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 75
+  speed: 73
   RocketAOEGO: {fileID: 0}
   RocketScript: {fileID: 0}
 --- !u!114 &2918520866631075944
@@ -158,3 +145,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   EnemiesInRange: []
+--- !u!135 &1948795355902644948
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7347179569479936900}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 300
+  m_Center: {x: 0, y: -0.00000095367426, z: 0.0000019073485}

@@ -62,43 +62,33 @@ public class EnemyHealth : MonoBehaviour
 
         if(Boss)
         {
-            Health = 325;
+            Health = 130;
         }
 
         if (LargeEnemy)
         {
-            Health = 175;
+            Health = 40;
             
         }
 
         if(Moth)
         {
-            Health = 80;
+            Health = 12;
         }
 
         if (MediumEnemy)
         {
-            Health = 10;
+            Health = 12;
         }
 
         if (SmallEnemy)
         {
-            Health = 25;
+            Health = 8;
         }
     }
 
     private void Update()
     {
-        if (Health == 0)
-        {
-            if (Boss)
-            {
-                SceneManager.LoadScene("Won");
-            }
-            Destroy(gameObject);
-            PlayerScript.Gold++;
-            GoldCollect.Play();
-        }
 
         if (Health <= 0)
         {
@@ -108,7 +98,7 @@ public class EnemyHealth : MonoBehaviour
                 SceneManager.LoadScene("Won");
             }
             Destroy(gameObject);
-            PlayerScript.Gold++;
+            PlayerScript.Gold+=2;
             GoldCollect.Play();
 
         }
@@ -160,7 +150,7 @@ public class EnemyHealth : MonoBehaviour
 
     public void TakeDamage()
     {
-        Health = Health - 1;
+        Health = Health - 0.3f;
         EnemySprite.color = Color.red;
         StartCoroutine(EnemyHit());
         RandomInt = Random.Range(0, 3);
@@ -187,7 +177,7 @@ public class EnemyHealth : MonoBehaviour
 
     IEnumerator EnemyHit()
     {
-        yield return new WaitForSecondsRealtime(0.1f);
+        yield return new WaitForSecondsRealtime(0.05f);
         EnemySprite.color = Color.white;
     }
 

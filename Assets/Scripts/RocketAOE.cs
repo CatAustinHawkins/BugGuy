@@ -14,6 +14,7 @@ public class RocketAOE : MonoBehaviour
         if(other.tag == "Enemy")
         {
             EnemiesInRange.Add(other.gameObject);
+            Shot();
         }
     }
 

@@ -37,6 +37,9 @@ public class Turret : MonoBehaviour
 	public bool RocketTurret;
 	public bool NormalTurret;
 
+	public float CooldownTime = 1f;
+	public bool Cooldown;
+
 	public AudioSource RocketTurretAudio;
 	public AudioSource NormalTurretAudio;
 
@@ -75,25 +78,29 @@ public class Turret : MonoBehaviour
 
 	// Update is called once per frame
 	void Update()
-	{
+    {
 
-		LockOnTarget();
+        LockOnTarget();
 
-		if (useLaser)
-		{
-			if (fireCountdown <= 0f)
-			{
-				Shoot();
-				fireCountdown = 1f / fireRate;
-				Laser();
+        if (useLaser)
+        {
+            if (!Cooldown)
+            {
+                Shoot();
+                Laser();
+                StartCoroutine(CooldownDelay());
 
-			}
+            }
+        }
+    }
 
-			fireCountdown -= Time.deltaTime;
-		}
+    IEnumerator CooldownDelay()
+    {
+        Cooldown = true;
+        yield return new WaitForSecondsRealtime(CooldownTime);
+        Cooldown = false;
 
-
-	}
+    }
 
 	void LockOnTarget()
 	{
