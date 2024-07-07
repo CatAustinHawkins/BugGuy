@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 5268130582771538723}
   - component: {fileID: -2000829475679780386}
   - component: {fileID: -1896770013342084982}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SmallEnemy_Mantis
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -233,7 +233,7 @@ GameObject:
   - component: {fileID: 5383428217015334375}
   - component: {fileID: 5383428217015334372}
   - component: {fileID: 5383428217015334373}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -333,7 +333,7 @@ GameObject:
   - component: {fileID: 5383428217075160492}
   - component: {fileID: 5383428217075160494}
   - component: {fileID: 5383428217075160495}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Fill
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -408,7 +408,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5383428217165156355}
   - component: {fileID: 5383428217165156354}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Slider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -499,7 +499,7 @@ GameObject:
   - component: {fileID: 5383428217569215660}
   - component: {fileID: 5383428217569215662}
   - component: {fileID: 5383428217569215663}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -573,7 +573,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5383428217680648751}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Fill Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}

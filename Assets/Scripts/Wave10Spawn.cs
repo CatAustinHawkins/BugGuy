@@ -83,13 +83,13 @@ public class Wave10Spawn : MonoBehaviour
 
     IEnumerator HeavyEnemySpawn()
     {
-        yield return new WaitForSecondsRealtime(3f);
+        yield return new WaitForSecondsRealtime(4f);
         HeavyEnemySpawning();
     }
 
     IEnumerator NormalEnemySpawn()
     {
-        yield return new WaitForSecondsRealtime(2.50f);
+        yield return new WaitForSecondsRealtime(3f);
         NormalEnemySpawning();
     }
 

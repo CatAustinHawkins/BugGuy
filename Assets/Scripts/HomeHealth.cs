@@ -64,5 +64,11 @@ public class HomeHealth : MonoBehaviour
 
             }
         }
+
+        if(other.tag == "Boss")
+        {
+            slidervalue =  0f;
+            HealthBar.value = slidervalue;
+        }
     }
 }

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 545488987369718858}
   - component: {fileID: 545488987369718860}
   - component: {fileID: 545488987369718859}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Fill
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -88,7 +88,7 @@ GameObject:
   - component: {fileID: 545488987520144230}
   - component: {fileID: 545488987520144229}
   - component: {fileID: 545488987520144228}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -187,7 +187,7 @@ GameObject:
   m_Component:
   - component: {fileID: 545488987697849884}
   - component: {fileID: 545488987697849885}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Slider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -285,7 +285,7 @@ GameObject:
   - component: {fileID: 1460775433217070153}
   - component: {fileID: 5247904248185773688}
   - component: {fileID: 7636273207901653176}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: LargeEnemy_Moth
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -521,7 +521,7 @@ GameObject:
   - component: {fileID: 545488987944126083}
   - component: {fileID: 545488987944126085}
   - component: {fileID: 545488987944126084}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -595,7 +595,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 545488988726513980}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Fill Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -634,7 +634,7 @@ GameObject:
   - component: {fileID: 6663483501416565811}
   - component: {fileID: 2486629112733809786}
   - component: {fileID: 1679392252000404341}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Square
   m_TagString: Untagged
   m_Icon: {fileID: 0}

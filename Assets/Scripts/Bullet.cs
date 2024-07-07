@@ -7,8 +7,16 @@ public class Bullet : MonoBehaviour
 
 	public float speed = 70f;
 
+	public GameObject RocketAOEGO;
+	public RocketAOE RocketScript;
 
-	public void Seek(Transform _target)
+
+    private void Start()
+    {
+		RocketAOEGO = GameObject.FindGameObjectWithTag("Rocket");
+		RocketScript = RocketAOEGO.GetComponent<RocketAOE>();
+	}
+    public void Seek(Transform _target)
 	{
 		target = _target;
 	}
@@ -39,7 +47,7 @@ public class Bullet : MonoBehaviour
 
 	void HitTarget()
 	{
-
+		RocketScript.Shot();
 		Destroy(gameObject);
 	}
 

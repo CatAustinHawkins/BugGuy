@@ -81,20 +81,20 @@ public class Wave8Spawn : MonoBehaviour
 
     IEnumerator WaveEndPause()
     {
-        yield return new WaitForSecondsRealtime(3f);
+        yield return new WaitForSecondsRealtime(5f);
         Wave9Spawning.SetActive(true);
         Destroy(gameObject);
     }
 
     IEnumerator HeavyEnemySpawn()
     {
-        yield return new WaitForSecondsRealtime(3f);
+        yield return new WaitForSecondsRealtime(4f);
         HeavyEnemySpawning();
     }
 
     IEnumerator NormalEnemySpawn()
     {
-        yield return new WaitForSecondsRealtime(2.5f);
+        yield return new WaitForSecondsRealtime(3f);
         NormalEnemySpawning();
     }
 

@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7869204808503969928}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Fill Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -54,7 +54,7 @@ GameObject:
   - component: {fileID: 1050265231971649107}
   - component: {fileID: -5127962289740722893}
   - component: {fileID: 9133487743779690539}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: MediumEnemy_Leech
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -268,7 +268,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7869204809042171577}
   - component: {fileID: 7869204809042171576}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Slider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -359,7 +359,7 @@ GameObject:
   - component: {fileID: 7869204809372131283}
   - component: {fileID: 7869204809372131277}
   - component: {fileID: 7869204809372131282}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -436,7 +436,7 @@ GameObject:
   - component: {fileID: 7869204809559415426}
   - component: {fileID: 7869204809559415427}
   - component: {fileID: 7869204809559415424}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -536,7 +536,7 @@ GameObject:
   - component: {fileID: 7869204809731578171}
   - component: {fileID: 7869204809731578165}
   - component: {fileID: 7869204809731578170}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Fill
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4101425635670223663}
   - component: {fileID: 4101425635670223661}
   - component: {fileID: 4101425635670223660}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Fill
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -87,7 +87,7 @@ GameObject:
   - component: {fileID: 4101425635862541171}
   - component: {fileID: 4101425635862541169}
   - component: {fileID: 4101425635862541168}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -164,7 +164,7 @@ GameObject:
   - component: {fileID: 4101425636282879889}
   - component: {fileID: 4101425636282879888}
   - component: {fileID: 4101425636282879891}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -270,7 +270,7 @@ GameObject:
   - component: {fileID: 7286526705814341641}
   - component: {fileID: 8473600814544091037}
   - component: {fileID: -248388584379656040}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: LargeEnemy_Scorpion 2
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -484,7 +484,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4101425636679795724}
   - component: {fileID: 4101425636679795725}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Slider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -573,7 +573,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4101425636903067875}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Fill Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}

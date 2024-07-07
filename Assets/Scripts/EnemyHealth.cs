@@ -62,18 +62,18 @@ public class EnemyHealth : MonoBehaviour
 
         if(Boss)
         {
-            Health = 100;
+            Health = 325;
         }
 
         if (LargeEnemy)
         {
-            Health = 40;
+            Health = 175;
             
         }
 
         if(Moth)
         {
-            Health = 15;
+            Health = 80;
         }
 
         if (MediumEnemy)
@@ -83,7 +83,7 @@ public class EnemyHealth : MonoBehaviour
 
         if (SmallEnemy)
         {
-            Health = 5;
+            Health = 25;
         }
     }
 

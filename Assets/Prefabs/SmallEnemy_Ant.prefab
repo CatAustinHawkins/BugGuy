@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1664003141722608425}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Fill Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -49,7 +49,7 @@ GameObject:
   - component: {fileID: 1664003141912396442}
   - component: {fileID: 1664003141912396443}
   - component: {fileID: 1664003141912396444}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -149,7 +149,7 @@ GameObject:
   - component: {fileID: 1664003141991352878}
   - component: {fileID: 1664003141991352876}
   - component: {fileID: 1664003141991352877}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -231,7 +231,7 @@ GameObject:
   - component: {fileID: 8347543117944594344}
   - component: {fileID: 7283491344666458855}
   - component: {fileID: 2156687183864043431}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SmallEnemy_Ant
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -446,7 +446,7 @@ GameObject:
   - component: {fileID: 1664003142434910879}
   - component: {fileID: 1664003142434910877}
   - component: {fileID: 1664003142434910878}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Fill
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -521,7 +521,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1664003142888116013}
   - component: {fileID: 1664003142888116012}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Slider
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -80,7 +80,7 @@ public class Wave6Spawn : MonoBehaviour
 
     IEnumerator WaveEndPause()
     {
-        yield return new WaitForSecondsRealtime(3f);
+        yield return new WaitForSecondsRealtime(5f);
         Wave7Spawning.SetActive(true);
         Destroy(gameObject);
     }
@@ -99,7 +99,7 @@ public class Wave6Spawn : MonoBehaviour
 
     IEnumerator FlyingEnemySpawn()
     {
-        yield return new WaitForSecondsRealtime(2.5f);
+        yield return new WaitForSecondsRealtime(2f);
         FlyingEnemySpawning();
     }
 

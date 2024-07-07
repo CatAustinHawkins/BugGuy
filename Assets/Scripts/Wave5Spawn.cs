@@ -60,7 +60,7 @@ public class Wave5Spawn : MonoBehaviour
 
     IEnumerator WaveEndPause()
     {
-        yield return new WaitForSecondsRealtime(3f);
+        yield return new WaitForSecondsRealtime(5f);
         Wave6Spawning.SetActive(true);
         Destroy(gameObject);
     }
