@@ -1,16 +1,12 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Despawn : MonoBehaviour
 {
-    // Start is called before the first frame update
     void Start()
     {
         StartCoroutine(Cooldown());
     }
-
-
     IEnumerator Cooldown()
     {
         yield return new WaitForSeconds(3f);
@@ -22,7 +18,6 @@ public class Despawn : MonoBehaviour
         if(other.tag == "Enemy")
         {
             Destroy(gameObject);
-
         }
     }
 }

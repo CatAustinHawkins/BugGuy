@@ -2,14 +2,12 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
-
 	private Transform target;
 
 	public float speed = 70f;
 
 	public GameObject RocketAOEGO;
 	public RocketAOE RocketScript;
-
 
     private void Start()
     {
@@ -21,7 +19,6 @@ public class Bullet : MonoBehaviour
 		target = _target;
 	}
 
-	// Update is called once per frame
 	void Update()
 	{
 
@@ -58,6 +55,4 @@ public class Bullet : MonoBehaviour
             Destroy(gameObject);
         }
     }
-
-
 }

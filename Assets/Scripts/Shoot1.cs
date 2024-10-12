@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Shoot1 : MonoBehaviour
@@ -27,6 +26,5 @@ public class Shoot1 : MonoBehaviour
         yield return new WaitForSeconds(0.5f);
         Cooldown = false;
     }
-
 
 }

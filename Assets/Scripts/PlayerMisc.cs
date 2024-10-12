@@ -1,8 +1,8 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+
 public class PlayerMisc : MonoBehaviour
 {
     public bool GunTwoPowerUp;
@@ -24,12 +24,7 @@ public class PlayerMisc : MonoBehaviour
     public GameObject PlayerArm;
 
     public int RandomInt;
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
     void Update()
     {
         Goldtext.text = Gold + "g";
@@ -54,12 +49,10 @@ public class PlayerMisc : MonoBehaviour
             if (RandomInt == 1)
             {
                 LilypadAudio.Play();
-
             }
             else
             {
                 LilypadAudio2.Play();
-
             }
         }
 
@@ -82,6 +75,5 @@ public class PlayerMisc : MonoBehaviour
         GunUI2.color = Color.white;
         GunUI.SetActive(false);
         PlayerArm.SetActive(true);
-
     }
 }

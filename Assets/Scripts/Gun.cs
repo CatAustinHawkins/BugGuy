@@ -1,10 +1,8 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Gun : MonoBehaviour
 {
-
     public bool Cooldown;
 
     public float damage = 1f;
@@ -18,7 +16,6 @@ public class Gun : MonoBehaviour
         {
             Shoot();
         }
-
     }
 
     public void Shoot()
@@ -36,12 +33,8 @@ public class Gun : MonoBehaviour
                     StartCoroutine(Shooting());
                 }
             }
-
-
         }
-
     }
-
 
     IEnumerator Shooting()
     {

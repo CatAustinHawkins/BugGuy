@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class EnemySpawn : MonoBehaviour
@@ -58,7 +57,6 @@ public class EnemySpawn : MonoBehaviour
         Wave1 = true;
         Wave1UI.SetActive(true);
         StartCoroutine(UIDelay());
-
     }
 
 

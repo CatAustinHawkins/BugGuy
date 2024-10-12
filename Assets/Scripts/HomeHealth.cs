@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -56,12 +54,10 @@ public class HomeHealth : MonoBehaviour
             if (RandomInt == 1)
             {
                 HomeDamage1.Play();
-
             }
             else
             {
                 HomeDamage2.Play();
-
             }
         }
 

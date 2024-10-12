@@ -1,18 +1,15 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class ConfuseTurret : MonoBehaviour
 {
-
     public GameObject ConfuseAOE;
 
     public AudioSource ConfusedAudio;
-    // Start is called before the first frame update
+
     void Start()
     {
         StartCoroutine(ConfuseDelay());
-
     }
 
     IEnumerator ConfuseDelay()
@@ -23,7 +20,6 @@ public class ConfuseTurret : MonoBehaviour
         ConfuseAOE.SetActive(false);
         StartCoroutine(Delay());
     }
-
 
     IEnumerator Delay()
     {

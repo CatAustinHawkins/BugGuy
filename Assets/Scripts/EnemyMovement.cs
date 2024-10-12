@@ -1,10 +1,8 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 public class EnemyMovement : MonoBehaviour
 {
-
     public GameObject PathEnd;
 
     public GameObject PathStart;
@@ -14,7 +12,6 @@ public class EnemyMovement : MonoBehaviour
 
     public NavMeshAgent agent;
 
-    // Start is called before the first frame update
     void Start()
     {
         agent = gameObject.GetComponent<NavMeshAgent>();
@@ -22,7 +19,6 @@ public class EnemyMovement : MonoBehaviour
         PathStart = GameObject.FindGameObjectWithTag(Path2);
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (!Confused)
@@ -53,6 +49,6 @@ public class EnemyMovement : MonoBehaviour
     IEnumerator ConfuseDelay()
     {
         yield return new WaitForSecondsRealtime(3f);
-        Confused = false;       
-}
+        Confused = false;
+    }
 }

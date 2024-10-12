@@ -1,8 +1,7 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using TMPro;
 using UnityEngine.UI;
+
 public class PlayerMovementTutorial : MonoBehaviour
 {
     [Header("Movement")]
@@ -56,8 +55,6 @@ public class PlayerMovementTutorial : MonoBehaviour
         rb.freezeRotation = true;
 
         readyToJump = true;
-
-
     }
 
     private void Update()
@@ -82,23 +79,6 @@ public class PlayerMovementTutorial : MonoBehaviour
             jumpForce = 5f;
 
         }
-
-/*        if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.D))
-        {
-            RandomInt = Random.Range(0, 3);
-
-            if (RandomInt == 1)
-            {
-                Step1.Play();
-
-            }
-            else
-            {
-                Step2.Play();
-
-            }
-        }
-*/
     }
 
     private void FixedUpdate()

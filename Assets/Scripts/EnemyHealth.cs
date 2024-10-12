@@ -5,7 +5,6 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 public class EnemyHealth : MonoBehaviour
 {
-
     public bool LargeEnemy;
     public bool MediumEnemy;
     public bool SmallEnemy;
@@ -34,7 +33,6 @@ public class EnemyHealth : MonoBehaviour
 
     public int RandomInt;
 
-    // Start is called before the first frame update
     void Start()
     {
         Player = GameObject.FindGameObjectWithTag("Player");
@@ -68,7 +66,6 @@ public class EnemyHealth : MonoBehaviour
         if (LargeEnemy)
         {
             Health = 40;
-            
         }
 
         if(Moth)
@@ -89,10 +86,8 @@ public class EnemyHealth : MonoBehaviour
 
     private void Update()
     {
-
         if (Health <= 0)
         {
-
             if (Boss)
             {
                 SceneManager.LoadScene("Won");
@@ -100,7 +95,6 @@ public class EnemyHealth : MonoBehaviour
             Destroy(gameObject);
             PlayerScript.Gold+=2;
             GoldCollect.Play();
-
         }
     }
 
@@ -180,5 +174,4 @@ public class EnemyHealth : MonoBehaviour
         yield return new WaitForSecondsRealtime(0.05f);
         EnemySprite.color = Color.white;
     }
-
 }

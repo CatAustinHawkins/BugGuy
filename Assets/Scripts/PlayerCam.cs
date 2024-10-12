@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerCam : MonoBehaviour
@@ -19,7 +17,6 @@ public class PlayerCam : MonoBehaviour
         Cursor.visible = false;
     }
 
-    // Update is called once per frame
     void Update()
     {
         float mouseX = Input.GetAxisRaw("Mouse X") * Time.deltaTime * sensX;

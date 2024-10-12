@@ -1,10 +1,8 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class PowerUpSpawn : MonoBehaviour
 {
-
     public GameObject[] SpeedPowerUps;
 
     public GameObject[] GunPowerUps;
@@ -13,11 +11,11 @@ public class PowerUpSpawn : MonoBehaviour
     public int Random2;
     public float Random3;
     public float Random4;
+
     public void Start()
     {
         StartCoroutine(PowerUpSpawnerSpeed());
         StartCoroutine(PowerUpSpawnerGun());
-
     }
 
     IEnumerator PowerUpSpawnerSpeed()
@@ -31,7 +29,6 @@ public class PowerUpSpawn : MonoBehaviour
             SpeedPowerUps[Random2].SetActive(true);
         }
         StartCoroutine(PowerUpSpawnerSpeed());
-
     }
 
     IEnumerator PowerUpSpawnerGun()
